@@ -81,8 +81,12 @@ def smallest_int(number_list):
         True
 
     """
+    smallest = None
+    for i in number_list:
+        if smallest is None or i <smallest:
+            smallest = i
 
-    return 100
+    return smallest
 
 
 def largest_int(number_list):
